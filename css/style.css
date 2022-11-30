@@ -1,0 +1,182 @@
+@font-face {
+    font-family: comfortaa;
+    src: url(../fonts/Comfortaa-VariableFont_wght.ttf);
+}
+
+/*Page Setup*/
+html {
+    height: 100vh;
+}
+main {
+    width: 50vw;
+}
+
+input {
+    border: 1px solid gray;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+select {
+    border: 1px solid gray;
+    border-radius: 2px; 
+    background-color: white;
+    padding: 2px;
+}
+
+button {
+    background-color: white;
+    border: 1px solid gray;
+}
+
+/*Header*/
+header {
+    background-color: black;
+    padding: 30px;
+    width: 100vw;
+}
+
+h1 {
+    margin: 0 auto;
+    color: white;
+    width: 50%;
+}
+
+
+/*Body*/
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, #009EFF, #00E7FF);
+    font-family: comfortaa;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100vw;
+    height: 80%;
+    justify-content: space-around;
+    margin: auto;
+}
+
+#container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 40%;
+    margin: 0 auto;
+    padding: 50px 0 50px 0;
+    background-color: white;
+    border-radius: 20px;
+    gap: 10px;
+}
+
+/*Form*/
+form {
+    display: flex;
+    flex-flow: column;
+    max-width: 50%;
+    gap: 5px;
+}
+
+input {
+    line-height: 2;
+    font-size: 15px;
+}
+
+#submit_button {
+    padding: 10px;
+}
+
+#stu_id_container {
+    display: flex;
+}
+
+#student_id {
+    border-right: none;
+    border-radius: 2px 0 0 2px;
+}
+
+#help {
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+}
+
+#help_message {
+    background-color: red;
+    border-radius: 10px;
+    width: 200px;
+    position: absolute;
+    bottom: 50%;
+    left: 53%;
+    z-index: 1;
+}
+
+#help_message p {
+    margin: 0;
+    padding: 5px;
+    font-size: 15px;
+    color: white;
+}
+
+#password_container {
+    display: flex;
+}
+
+#show_password {
+    cursor: pointer;
+}
+
+#courses {
+    font-size: 15px;
+    padding: 5px;
+}
+
+#submit_button {
+    width: 50%;
+    float: right;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#error {
+    background-color: rgba(255, 200, 200, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px rgb(255, 0, 0) solid;
+    display: none;
+}
+
+@media screen and (max-width: 1450px){
+    main {
+        height: 100%;
+    }
+    
+    #container {
+        width: 80%;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    body {
+        background: white;
+    }
+
+    main {
+        display: block;
+    }
+
+    #container {
+        width: 100%;
+    }
+}
