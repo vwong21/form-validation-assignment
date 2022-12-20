@@ -17,30 +17,20 @@
     <main>
         <div id="container">
             <form action="thank-you.html" method="get" id="main_form">
-                <label for="first_name">First Name</label>
-                <input type="text" name="firstname" id="first_name" placeholder="First Name">
-
-                <label for="last_name">Last Name</label>
-                <input type="text" name="lastname" id="last_name" placeholder="Last Name">
-
-                <label for="student_id">Student ID</label>
+                <input type="text" name="firstname" id="first_name" placeholder="First Name" class="input">
+                <input type="text" name="lastname" id="last_name" placeholder="Last Name" class="input">
                 <div id="stu_id_container">
-                    <input type="text" name="studentid" id="student_id" placeholder="A0nnnnnnn">
-                    <button id="help" type="button">?</button>
+                    <input type="text" name="studentid" id="student_id" placeholder="Student ID" class="input">
+                    <button id="help" type="button" class="input">?</button>
                     <div id="help_message">
                         <p>? BCIT student IDs must match the pattern: A0nnnnnnn where 'n' is any number.</p>
                     </div>
                 </div>
-
-
-                <label for="password">Password</label>
                 <div id="password_container">
-                    <input type="password" name="password" id="password" placeholder="password">
-                    <button id="show_password" type="button">Show Password</button>
+                    <input type="password" name="password" id="password" placeholder="password" class="input">
+                    <button id="show_password" type="button" class="input">Show Password</button>
                 </div>
-
-                <label for="courses">Courses</label>
-                <select name="courses" id="courses">
+                <select name="courses" id="courses" class="input">
                     <option value="default" selected disabled>Choose your course:</option>
                     <option value="comp1850">COMP 1850</option>
                     <option value="comp2132">COMP 2132</option>
@@ -48,7 +38,7 @@
                     <option value="comp3012">COMP 3012</option>
                     <option value="comp3015">COMP 3015</option>
                 </select>
-                <button type="submit" id="submit_button">Submit</button>
+                <button type="submit" id="submit_button" class="input">Submit</button>
             </form>
             <section id="error">
                 <p>Form Submission Failed!</p>
