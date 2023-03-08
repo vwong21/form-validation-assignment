@@ -28,6 +28,14 @@ body {
     padding: 0.5rem;
 }
 
+#student_id, #password {
+    border-radius: 3px 0 0 3px;
+}
+
+#show_password, #help {
+    border-radius: 0 3px 3px 0;
+}
+
 form {
     display: flex;
     flex-flow: column nowrap;
@@ -44,6 +52,10 @@ form {
     flex-flow: row nowrap;
 }
 
+#submit_button {
+    background-color: #13ABC4;
+}
+
 @media screen and (max-width: 500px) {
     form {
         width: 90vw;
@@ -56,6 +68,6 @@ form {
         background-color: rgba(255, 200, 200, 1);
         padding: 0.5rem;
         border: 1px red solid;
-        border-radius: 10px;
+        border-radius: 5px;
     }
 }
